@@ -1,7 +1,36 @@
+body {
+  background-color: #162b4b;
+  background-image: url("wallpaper.png");
+  width: 300px;
+
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: Lucida Sans Unicode;
+  color: #ffffff;
+}
+
+.fill_button {
+  text-align: center;
+}
+
+.fill {
+  text-decoration: none;
+  display: inline-block;
+
+  border-radius: 50px;
+}
+
+.onglets_html {
+  text-align: center;
+}
+
 .onglet {
   display: inline-block;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 0px;
+  margin-right: 0x;
   padding: 3px;
   border: 1px solid black;
   cursor: pointer;
@@ -13,11 +42,23 @@
 }
 
 .onglet_n {
-  background: #bbbbbb;
+  background: #162b4b;
   border-bottom: 1px solid black;
 }
 .onglet_y {
-  background: #dddddd;
+  background: #162b4b;
   border-bottom: 0px solid black;
   padding-bottom: 4px;
+}
+
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
 }
