@@ -1,32 +1,26 @@
-
 {
-    "manifest_version": 3,
-    "name": "Anti-spam",
-    "description": "Say goodbye to ",
-    "version": "0.1",
-    "action": {
-        "default_popup": "index.html",  
-        "default_icon":{
-        "16":"img/icon16.png",
-        "32":"img/icon32.png" ,   
-        "64":"img/icon64.png"
-        }
-    },
-    
-    "background":{
-        "service_worker": "background.js"
-        
-    },
-
-    "permissions":[
-        "webNavigation",
-        "tabs"
-    ],
-
-    "icons":{
-        "16":"img/icon16.png",
-        "32":"img/icon32.png" ,   
-        "64":"img/icon64.png"
+  "manifest_version": 3,
+  "name": "Anti-spam",
+  "description": "Say goodbye to spam",
+  "version": "0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "64": "img/icon64.png"
     }
-}
+  },
 
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": ["webNavigation", "tabs"],
+
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "64": "img/icon64.png"
+  }
+}
