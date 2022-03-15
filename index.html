@@ -9,34 +9,68 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
 
-
   <body>
     <h1>Anti-Spam extension</h1>
-    
-
-    <div class="autofill">
-    <button onclick="window.location.href = "action a faire;">
-      Autofill
-    </button>
+    <div class="onglets_html">
+      <div class="onglets">
+        <div class="onglet_y onglet"><a href="index.html">Autofill</a></div>
+        <div class="onglet_n onglet"><a href="mailbox.html">Mailbox</a></div>
+      </div>
     </div>
-    <br>
-    
+
+    <!--Onglets-->
+
+    <br />
+    <div class="fill">
+      <button onclick="window.location.href = 'https://fr.w3docs.com/';">
+        Fill
+      </button>
+    </div>
+    <br />
+
     <!--Checkbox -->
-
     <div class="automail">
-      <input type="checkbox" name="auto" value="mail" />:Auto-mail
-    </div>
-    <div class="autoname">
-      <input type="checkbox" name="auto" value="name" />:Auto-name
-    <div class="autozip">
-      <input type="checkbox" name="auto" value="zip" />:Auto-zip
-    </div>
-    <div class="autopasswd">
-      <input type="checkbox" name="auto" value="passwd" />:Auto-passwd
-    </div>
-    <div class="autonum">
-      <input type="checkbox" name="auto" value="num" />:Auto-num
+      <label for="mail"
+        ><input type="checkbox" name="auto" value="mail" />:Auto-mail</label
+      >
     </div>
 
+    <div class="autoname">
+      <label for="name"
+        ><input type="checkbox" name="auto" value="name" />:Auto-name</label
+      >
+    </div>
+
+    <div class="autozip">
+      <label for="zip"
+        ><input type="checkbox" name="auto" value="zip" />:Auto-zip</label
+      >
+    </div>
+
+    <div class="autopasswd">
+      <label for="passwd"
+        ><input type="checkbox" name="auto" value="passwd" />:Auto-passwd</label
+      >
+    </div>
+
+    <div class="autonum">
+      <label for="autonum"
+        ><input type="checkbox" name="auto" value="num" />:Auto-num</label
+      >
+    </div>
+
+    <!--USEFUL LINKS-->
+    <a
+      href="https://github.com/ker0zen/antispam"
+      rel="noopener noreferrer"
+      target="_blank"
+      >Github</a
+    >
+    <a
+      href="http://www.leetchi.com/c/ker0zen"
+      rel="noopener noreferrer"
+      target="_blank"
+      >Donate</a
+    >
   </body>
 </html>
