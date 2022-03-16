@@ -1,15 +1,24 @@
 body {
   background-color: #162b4b;
   background-image: url("wallpaper.png");
-  width: 300px;
 
+  width: 300px;
+  height: 300px;
   color: #ffffff;
 }
 h1 {
   text-align: center;
-  letter-spacing: 2px;
-  font-family: Lucida Sans Unicode;
+  letter-spacing: 3px;
+  font-family: Abel;
+  font-style: bold;
   color: #ffffff;
+}
+
+hr {
+  border: 0;
+  border-top: 5px solid;
+  border-radius: 10px;
+  color: #0a1422;
 }
 
 .fill_button {
@@ -19,12 +28,22 @@ h1 {
 .fill {
   text-decoration: none;
   display: inline-block;
-
-  border-radius: 50px;
+  font-size: 30px;
+  font-family: Abel;
+  border-radius: 20px;
+  padding: 10px 45px;
+  border: none;
+  transition-duration: 500ms;
+}
+.fill:hover {
+  background-color: #a0bae0;
 }
 
 .onglets_html {
   text-align: center;
+  font-size: 20px;
+  font-family: Abel;
+  letter-spacing: 2px;
 }
 
 .onglet {
@@ -32,33 +51,41 @@ h1 {
   margin-left: 0px;
   margin-right: 0x;
   padding: 3px;
-  border: 1px solid black;
+  border: 3px solid #0a1422;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .onglet a {
-  color: #000000;
   text-decoration: none;
 }
 
 .onglet_n {
-  background: #162b4b;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #0a1422;
+  text-decoration: none;
 }
 .onglet_y {
-  background: #162b4b;
-  border-bottom: 0px solid black;
+  border-bottom: 0px solid #0a1422;
   padding-bottom: 4px;
+  text-decoration: none;
+}
+
+.link {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  text-decoration: none;
+}
+
+.link_container {
+  text-decoration: underline;
+  display: inline-block;
 }
 
 a:link,
 a:visited {
   color: #ffffff;
   text-decoration: none;
-  text-decoration: underline;
-}
-
-a:hover,
-a:active {
-  text-decoration: underline;
 }
