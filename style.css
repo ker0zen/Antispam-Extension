@@ -1,14 +1,15 @@
 body {
   background-color: #162b4b;
-  background-image: url("wallpaper.png");
-
+  background-image: url("/img/wallpaper.png");
   width: 300px;
   height: 300px;
   color: #ffffff;
+  border: 0px solid #0a1422;
 }
 h1 {
   text-align: center;
   letter-spacing: 3px;
+  font-size: 30px;
   font-family: Abel;
   font-style: bold;
   color: #ffffff;
