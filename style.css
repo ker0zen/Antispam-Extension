@@ -47,12 +47,12 @@ hr {
   text-decoration: none;
 }
 
-.onglet_n {
-  border-bottom: 3px solid #0a1422;
+.onglet_y {
+  border-bottom: 3px solid #162b4b;
   text-decoration: none;
 }
-.onglet_y {
-  border-bottom: 0px solid #0a1422;
+.onglet_n {
+  border-bottom: 3px solid #0a1422;
   padding-bottom: 4px;
   text-decoration: none;
 }
@@ -70,7 +70,7 @@ hr {
   border-radius: 20px;
   padding: 7px 45px;
   border: none;
-  transition-duration: 500ms;
+  transition-duration: 100ms;
 }
 .fill:hover {
   background-color: #162b4b;

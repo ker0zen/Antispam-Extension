@@ -6,8 +6,6 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "img/icon16.png",
-      "32": "img/icon32.png",
       "64": "img/icon64.png"
     }
   },
@@ -19,8 +17,6 @@
   "permissions": ["webNavigation", "tabs"],
 
   "icons": {
-    "16": "img/icon16.png",
-    "32": "img/icon32.png",
     "64": "img/icon64.png"
   }
 }
