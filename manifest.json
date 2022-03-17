@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Anti-spam",
   "description": "Say goodbye to spam",
-  "version": "0.01",
+  "version": "0.1",
   "action": {
     "default_popup": "index.html",
     "default_icon": {
