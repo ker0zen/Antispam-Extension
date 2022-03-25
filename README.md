@@ -38,7 +38,7 @@
 - Animation et design en CSS
 - Bouton donation pour faire de l’argent plein d’argent
 
-***Maquette/Design voulue:***
+***Maquette/Design simplifié:***
 
 ![Untitled](Projet%20ext%20ab438/Untitled.png)
 
