@@ -13,21 +13,21 @@
 
 ***Contexte et définition du problème:***
 
-- Les formulaires d’inscriptions demande trop d’informations personnelles dont ils n’ont pas besoins.
+- Les formulaires d’inscription demandent trop d’informations personnelles dont ils n’ont pas besoin.
 
 ***Objectif du projet :***
 
-- Créer une extension de navigateur qui auto-remplis des fausse informations tels que le nom, le prénom, l’age etc ainsi qu’une adresse mail jetable (type yopmail) et un mot de passe qui sera stocké.
+- Créer une extension de navigateur qui auto-remplit des fausses informations telles que le nom, le prénom, l’age etc ainsi qu’une adresse mail jetable (type yopmail) et un mot de passe qui sera stocké.
 
 ***Solutions actuelle:***
 
-- [Autofill](https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk) by Tohodo: extension qui autoremplis les formulaire en fonction de profil d’autocomplétion prélablement configuré. Problème: necessite de recréer un profil pour chaque nouveau formulaire, utilise de vraie informatio, ne génere rien mais autoremplis juste les données qu’on lui donnes.
+- [Autofill](https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk) by Tohodo: Extension qui auto remplis les formulaires en fonction de profil d’autocomplétion probablement configuré. Problème : nécessite de recréer un profil pour chaque nouveau formulaire, utilise de vraies informations, ne génère rien, mais auto remplis juste les données qu’on lui donne.
 
 ***Langages utilisés:***
 
-- Javascript (langage obligatoire pour les extension de navigateurs)
+- Javascript pour le manifest(fichier "carte d'identité de l'extension") et pour le fonctionnement de l'extension
 - HTML pour le squellette de l’extansion
-- CSS le design de l’extansionx
+- CSS le design de l’extension
 
 ***Attentes et contraintes :***
 
