@@ -1,6 +1,66 @@
 //autofill https://github.com/bitwarden/browser/blob/master/src/content/autofill.js
 
+function isConsonne(x) {
+  for (let i = 0; i < consonne.length; i++) {
+    if (x == consonne[i]) {
+      return true;
+    }
+  }
+}
+
+function newUser() {
+  //Mot de passe
+  let mdp = "";
+  for (var i = 0; i < 10; i++) {
+    nombreAleatoire = Math.floor(Math.random() * 11); //nmbr aléatoire entre 0 et 10
+    mdp += nombreAleatoire;
+    let uneChanceSurDeux = Math.random();
+    if (uneChanceSurDeux >= 0.5) {
+      mdp += caracteres[nombreAleatoire];
+    }
+  }
+
+  // Nom
+  let nom =
+    nomCourants[Math.floor(Math.random() * nomCourants.length)].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des nom Courants
+
+  // Prénom
+  let prenom =
+    prenomCourants[
+      Math.floor(Math.random() * prenomCourants.length)
+    ].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des prenom Courants
+
+  //Sexe
+  let sexe = "";
+  uneChanceSurDeux = Math.random();
+  if (uneChanceSurDeux >= 0.5) {
+    sexe = "m";
+  } else {
+    sexe = "f";
+  }
+
+  //identifiant (au format prenom_consonneDuNom)
+  let identifiant = "";
+  identifiant += prenom;
+  identifiant += "_";
+  for (let i = 0; i < nom.length; i++) {
+    if (isConsonne(nom[i]) == true) {
+      identifiant += nom[i];
+    }
+  }
+  //Zipcode
+  //total
+  return {
+    mdp: mdp,
+    nom: nom,
+    prenom: prenom,
+    sexe: sexe,
+    identifiant: identifiant,
+  };
+}
+
 //Tableau nécessaire
+
 let caracteres = ["@", "#", "&", "*", "+", "-", "µ", "~", "?", "!", "£"];
 let nomCourants = [
   "Martin",
@@ -2528,80 +2588,7 @@ let consonne = [
   "z",
 ];
 
-function isConsonne(x) {
-  for (let i = 0; i < consonne.length; i++) {
-    if (x == consonne[i]) {
-      return true;
-    }
-  }
-}
-
-function newUser() {
-  //Vérification des checkbox
-  let automailCheck;
-  let autonameCheck;
-  let autozipcodeCheck;
-  let autopassowrdCheck;
-  let autonumbCheck;
-
-  document.getElementByClass("automail").onclick = function () {
-    // access properties using this keyword
-    if (this.checked) {
-      automailCheck = true;
-    } else {
-      automailCheck = false;
-    }
-  };
-
-  //Mot de passe
-  let mdp = "";
-  for (var i = 0; i < 10; i++) {
-    nombreAleatoire = Math.floor(Math.random() * 11); //nmbr aléatoire entre 0 et 10
-    mdp += nombreAleatoire;
-    let uneChanceSurDeux = Math.random();
-    if (uneChanceSurDeux >= 0.5) {
-      mdp += caracteres[nombreAleatoire];
-    }
-  }
-
-  // Nom
-  let nom =
-    nomCourants[Math.floor(Math.random() * nomCourants.length)].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des nom Courants
-
-  // Prénom
-  let prenom =
-    prenomCourants[
-      Math.floor(Math.random() * prenomCourants.length)
-    ].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des prenom Courants
-
-  //Sexe
-  let sexe = "";
-  uneChanceSurDeux = Math.random();
-  if (uneChanceSurDeux >= 0.5) {
-    sexe = "m";
-  } else {
-    sexe = "f";
-  }
-
-  //identifiant (au format prenom_consonneDuNom)
-  let identifiant = "";
-  identifiant += prenom;
-  identifiant += "_";
-  for (let i = 0; i < nom.length; i++) {
-    if (isConsonne(nom[i]) == true) {
-      identifiant += nom[i];
-    }
-  }
-  //Zipcode
-  //total
-  return {
-    mdp: mdp,
-    nom: nom,
-    prenom: prenom,
-    sexe: sexe,
-    identifiant: identifiant,
-  };
-}
+//-------------------------------------------------------
 
 let user1 = newUser();
 console.log(user1);
