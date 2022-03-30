@@ -11,12 +11,16 @@ function isConsonne(x) {
 function newUser() {
   //Mot de passe
   let mdp = "";
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 7; i++) {
     nombreAleatoire = Math.floor(Math.random() * 11); //nmbr aléatoire entre 0 et 10
     mdp += nombreAleatoire;
     let uneChanceSurDeux = Math.random();
     if (uneChanceSurDeux >= 0.5) {
       mdp += caracteres[nombreAleatoire];
+    }
+
+    if (uneChanceSurDeux <= 0.5) {
+      mdp += alphabet[Math.floor(Math.random() * 26)];
     }
   }
 
@@ -61,6 +65,7 @@ function newUser() {
 
 //Tableau nécessaire
 
+//-------------------------------------------------------
 let caracteres = ["@", "#", "&", "*", "+", "-", "µ", "~", "?", "!", "£"];
 let nomCourants = [
   "Martin",
@@ -2587,8 +2592,38 @@ let consonne = [
   "x",
   "z",
 ];
-
-//-------------------------------------------------------
+let alphabet = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
 
 let user1 = newUser();
 console.log(user1);
+console.log(user1.identifiant);
+console.log(typeof user1.identifiant);
+
+console.log(document.getElementById("champIdentifiant"));
