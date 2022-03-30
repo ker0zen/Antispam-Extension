@@ -2625,5 +2625,3 @@ let user1 = newUser();
 console.log(user1);
 console.log(user1.identifiant);
 console.log(typeof user1.identifiant);
-
-console.log(document.getElementById("champIdentifiant"));
