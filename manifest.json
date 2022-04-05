@@ -10,7 +10,17 @@
     }
   },
 
-  "permissions": ["webNavigation", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["script.js"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["webNavigation", "tabs", "activeTab"],
 
   "icons": {
     "64": "img/icon64.png"

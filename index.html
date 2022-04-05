@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antispam Extension</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="background.js"></script>
-
+    
+   
+    
+    
     <link
       href="https://fonts.googleapis.com/css?family=Abel"
       rel="stylesheet"
     />
   </head>
+
+  <p id="spanid"></p>
 
   <body>
     <h1>Anti-Spam extension</h1>
@@ -27,8 +31,13 @@
     </div>
     <!--BOUTON PRINCIPAL-->
     <br />
+    
+
+
     <div class="fill_button">
-      <button class="fill">Fill !</button>
+      <a href="javascript:(function() {alert('hello');})()" target="_blank">
+        <button class="fill" onclick="alert('Hi user!')">Fill !</button>
+     
     </div>
 
     <!--Checkbox -->
@@ -95,7 +104,7 @@
           >Github</a
         >
       </div>
-
+<!--
       ·
       <div class="link_container">
         <a
@@ -106,5 +115,6 @@
         >
       </div>
     </div>
+    -->
   </body>
 </html>
