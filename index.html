@@ -3,29 +3,27 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <!-- Meta obligatoire pour la sécurité--> 
-    <meta http-equiv="Content-Security-Policy"
-    content="
+    <!-- Meta obligatoire pour la sécurité-->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
       default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
       style-src   'self' https://fonts.googleapis.com;
       font-src    'self' data: https://fonts.gstatic.com;
       img-src     'self' data: content:;
       media-src   *;
             "
-  />
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antispam Extension</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />    
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css?family=Abel"
       rel="stylesheet"
     />
-    <script src="scripts.js"></script>
+    <script type="module" src="script.js"></script>
   </head>
-
-  <p id="spanid"></p>
-
   <body>
     <h1>Anti-Spam extension</h1>
     <hr />
@@ -36,14 +34,17 @@
         <div class="onglet_n onglet"><a href="mailbox.html">Mailbox</a></div>
       </div>
     </div>
+
+    <p id="champs_mail"></p>
+    <p id="champs_name"></p>
+    <p id="champs_passwd"></p>
+    <p id="champs_pseudo"></p>
+
     <!--BOUTON PRINCIPAL-->
     <br />
-    
 
-    <div class="fill_button"> 
-        <button class="fill">Fill !</button>
-        
-
+    <div id="fill_button">
+      <button id="fill">Fill !</button>
     </div>
 
     <!--Checkbox -->
@@ -69,16 +70,7 @@
         />:Auto-name</label
       >
       <br />
-      <label for="zip"
-        ><input
-          id="autozip"
-          type="checkbox"
-          name="auto"
-          value="zip"
-          checked
-        />:Auto-zipcode</label
-      >
-      <br />
+
       <label for="passwd"
         ><input
           id="autopasswd"
@@ -89,14 +81,14 @@
         />:Auto-passwd</label
       >
       <br />
-      <label for="autonum"
+      <label for="autopseudo"
         ><input
-          id="autonum"
+          id="autopseudo"
           type="checkbox"
           name="auto"
           checked
-          value="num"
-        />:Auto-num</label
+          value="pseudo"
+        />:Auto-pseudo</label
       >
     </div>
     <!--USEFUL LINKS-->
@@ -110,7 +102,7 @@
           >Github</a
         >
       </div>
-<!--
+
       ·
       <div class="link_container">
         <a
@@ -121,6 +113,5 @@
         >
       </div>
     </div>
-    -->
   </body>
 </html>
