@@ -51,8 +51,7 @@
 - [x]  Faire une maquette visuelle des attentes
 - [x]  Programmer la version html de l’extension (champs a cocher bouton text lien)
 - [x]  Coder le CSS
-- [ ]  Faire lapp en js
-- [ ]  Programmer les differentes fonctions
+- [x]  Generateur identitée
 - [ ]  -Detections des champs
 - [ ]  -Auto-Remplissage
 - [ ]  -Stockage de l’identifiant et du mots de passe dans un onglets
