@@ -6,7 +6,8 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "64": "img/icon64.png"
+      "64": "img/64.png",
+      "128": "img/128.png"
     }
   },
 
@@ -16,9 +17,9 @@
       "js": ["script.js"]
     }
   ],
-  "permissions": ["webNavigation", "tabs", "activeTab"],
 
   "icons": {
-    "64": "img/icon64.png"
+    "64": "img/64.png",
+    "128": "img/128.png"
   }
 }

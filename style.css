@@ -2,13 +2,16 @@ body {
   background-color: #162b4b;
   background-image: url("/img/wallpaper.png");
   width: 300px;
-  height: 350px;
+
   color: #ffffff;
   border: 0px solid #0a1422;
 }
 
 p {
   line-height: 1;
+  font-family: Abel;
+  font-size: 15px;
+  position: relative;
 }
 
 h1 {
@@ -75,20 +78,22 @@ hr {
   border-radius: 20px;
   padding: 7px 45px;
   border: none;
-  transition-duration: 100ms;
+  transition-duration: 150ms;
 }
 #fill:hover {
   background-color: #162b4b;
   color: #fff;
-  border: solid;
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: -3px;
 }
 
 .checkbox_container {
   font-family: Abel;
   font-size: 20px;
   letter-spacing: 2px;
-  position: absolute;
-  bottom: 45px;
+  position: inline;
+  margin-top: 30px;
+  margin-bottom: 30px;
   right: 0;
   left: 0;
 }
