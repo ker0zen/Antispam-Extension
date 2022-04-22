@@ -2553,20 +2553,111 @@ let alphabet = [
   "z",
 ];
 
-export function expcaracteres() {
-  return caracteres;
+function isConsonne(x) {
+  for (let i = 0; i < consonne.length; i++) {
+    if (x == consonne[i]) {
+      return true;
+    }
+  }
 }
 
-export function expnomCourants() {
-  return nomCourants;
-}
-export function expprenomCourants() {
-  return prenomCourants;
+export default function newUser() {
+  //Mot de passe
+  let mdp = "";
+  let nombreAleatoire;
+  let uneChanceSurDeux;
+  for (var i = 0; i < 7; i++) {
+    nombreAleatoire = Math.floor(Math.random() * 11); //nmbr aléatoire entre 0 et 10
+    mdp += nombreAleatoire;
+    let uneChanceSurDeux = Math.random();
+    if (uneChanceSurDeux >= 0.5) {
+      mdp += caracteres[nombreAleatoire];
+    }
+
+    if (uneChanceSurDeux <= 0.5) {
+      mdp += alphabet[Math.floor(Math.random() * 26)];
+    }
+  }
+
+  // Nom
+  let nom = "";
+  nom =
+    nomCourants[Math.floor(Math.random() * nomCourants.length)].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des nom Courants
+
+  // Prénom
+  let prenom = "";
+  prenom =
+    prenomCourants[
+      Math.floor(Math.random() * prenomCourants.length)
+    ].toLowerCase(); // nmbr aléatoire entre 0 et la longueur de la liste des prenom Courants
+
+  //Sexe
+  let sexe = "";
+  uneChanceSurDeux = Math.random();
+  if (uneChanceSurDeux >= 0.5) {
+    sexe = "m";
+  } else {
+    sexe = "f";
+  }
+
+  //identifiant (au format prenom_consonneDuNom)
+  let pseudo = "";
+  pseudo = "";
+  pseudo += prenom;
+  pseudo += "_";
+  for (let i = 0; i < nom.length; i++) {
+    if (isConsonne(nom[i]) == true) {
+      pseudo += nom[i];
+    }
+  }
+
+  //Mail
+  let mail = "";
+  mail = nom + "." + prenom + "@" + "sharklasers.com";
+
+  //total
+  return {
+    mdp: mdp,
+    nom: nom,
+    prenom: prenom,
+    sexe: sexe,
+    pseudo: pseudo,
+    mail: mail,
+  };
 }
 
-export function expalphabet() {
-  return alphabet;
+export function isChecked(box) {
+  if (box.checked == true) {
+    return true;
+  } else {
+    return false;
+  }
 }
-export function expconsonne() {
-  return consonne;
-}
+
+/* DETECTION ET AUTOREMPLISSAGE
+
+export let check_automail = document.getElementById("automail");
+export let choice_automail = isChecked(check_automail);
+check_automail.addEventListener("click", () => {
+  choice_automail = isChecked(check_automail);
+});
+
+export let check_autoname = document.getElementById("autoname");
+export let choice_autoname = isChecked(check_autoname);
+check_autoname.addEventListener("click", () => {
+  choice_autoname = isChecked(check_autoname);
+});
+
+export let check_autopasswd = document.getElementById("autopasswd");
+export let choice_autopasswd = isChecked(check_autopasswd);
+check_autopasswd.addEventListener("click", () => {
+  choice_autopasswd = isChecked(check_autopasswd);
+});
+
+export let check_autopseudo = document.getElementById("autopseudo");
+export let choice_autopseudo = isChecked(check_autopseudo);
+check_autopseudo.addEventListener("click", () => {
+  choice_autopseudo = isChecked(check_autopseudo);
+});
+
+*/

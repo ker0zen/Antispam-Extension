@@ -11,12 +11,31 @@
     }
   },
 
+  "web_accessible_resources": [
+    {
+      "resources": ["/data/data.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["autofill.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["main.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["popup-script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
   "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "run_at": "document_end",
-      "js": ["content.js"]
+      "js": ["content-script.js"]
     }
   ],
 

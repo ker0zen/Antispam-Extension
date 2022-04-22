@@ -2,7 +2,7 @@ body {
   background-color: #162b4b;
   background-image: url("/img/wallpaper.png");
   width: 300px;
-
+  animation: animation 0.5s 1;
   color: #ffffff;
   border: 0px solid #0a1422;
 }
@@ -21,7 +21,8 @@ h1 {
   font-family: Abel;
   font-style: normal;
   color: #ffffff;
-  margin: 1px;
+  margin: 1x;
+  animation: animation 0.5s 1;
 }
 
 hr {
@@ -30,6 +31,17 @@ hr {
   border-radius: 10px;
   color: #ffffff;
   margin: 10px;
+  animation: animation 0.5s 1;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .onglets_html {
@@ -67,6 +79,7 @@ hr {
 
 #fill_button {
   text-align: center;
+  animation: animation 0.5s 1;
 }
 
 #fill {
@@ -87,7 +100,14 @@ hr {
   outline-offset: -3px;
 }
 
+#verificateur {
+  top: -9999px;
+  position: absolute;
+  visibility: hidden;
+}
+
 .checkbox_container {
+  animation: animation 0.5s 1;
   font-family: Abel;
   font-size: 20px;
   letter-spacing: 2px;
