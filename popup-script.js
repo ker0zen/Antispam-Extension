@@ -23,8 +23,16 @@ let final_user = {
   pseudo: "None",
   mail: "None",
 };
+let h1_test; // Ici on test s'il existe un header h1 puis si il en existe, on regarder si c'est le header du popup
+if (document.querySelector("h1")) {
+  if (document.querySelector("h1").innerHTML == "Anti-Spam extension") {
+    h1_test = true;
+  }
+} else {
+  h1_test = false;
+}
 
-if (document.querySelector("h1").innerHTML === "Anti-Spam extension") {
+if (h1_test == true) {
   // Le if permet d'éviter une erreur car le script sexecute aussi sur les page visitée par l'utilisateur
 
   button.addEventListener("click", () => {
@@ -74,3 +82,4 @@ if (document.querySelector("h1").innerHTML === "Anti-Spam extension") {
     }
   });
 }
+export { final_user };
