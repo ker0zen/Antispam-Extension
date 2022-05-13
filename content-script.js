@@ -11,9 +11,8 @@ const head =
 head.insertBefore(script, head.lastChild);
 
 console.log("{!} Antispam on! {!} ");
-/*
+
 let para = document.getElementsByTagName("p");
-for (elt of para) {
+for (let elt of para) {
   elt.innerText = "test";
 }
-*/

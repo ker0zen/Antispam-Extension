@@ -15,7 +15,7 @@ function isChecked(box) {
 
 let button = document.getElementById("fill");
 
-export let final_user = {
+let final_user = {
   nom: "None",
   prenom: "None",
   mdp: "None",
