@@ -46,9 +46,9 @@
 
 ![Untitled](Antispam%20Extension%20fe60ee499cf74296815c97007a7ea738/Untitled.png)
 
-![Untitled](Antispam%20Extension%20fe60ee499cf74296815c97007a7ea738/Untitled%201.png)
+[Untitled](Antispam%20Extension%20fe60ee499cf74296815c97007a7ea738/Untitled%201.png)
 
-![Untitled](Antispam%20Extension%20fe60ee499cf74296815c97007a7ea738/Untitled%202.png)
+[Untitled](Antispam%20Extension%20fe60ee499cf74296815c97007a7ea738/Untitled%202.png)
 
 ***Todo:***
 
